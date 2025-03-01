@@ -1,80 +1,109 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <!-- Menu -->
-        <div id="navbar">
-            <ul id="nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="listings.html">Listings</a></li>
-                <li><a href="guides.html">Guides</a></li>
-                <li><a href="stories.html">Stories</a></li>
-            </ul>
-        </div>
-        <!-- Landing -->
-        <div class="section" id="landing">
-            <div id="title">
-                <h1>Find the right pet for you!</h1>
-                <p>Search pets from shelters, rescues, and individuals.</p>
-                <!-- Search bar -->
-                <div id="search">
-                    <select name="cars" id="cars">
-                        <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="mercedes">Mercedes</option>
-                        <option value="audi">Audi</option>
-                    </select>
-                    <input type="search" id="location" name="location">
-                </div>
+<head>
+<style>
+    #nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    #nav li {
+        float:left;
+    }
+
+    #nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    #nav li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #04AA6D;
+    }
+</style>
+</head>
+<body>
+    <!-- Menu -->
+    <ul id="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listings.html">Listings</a></li>
+        <li><a href="guides.html">Guides</a></li>
+        <li><a href="stories.html">Stories</a></li>
+    </ul>
+    <!-- Landing -->
+    <div class="section" id="landing">
+        <div id="title">
+            <h1>Find the right pet for you!</h1>
+            <p>Search pets from shelters, rescues, and individuals.</p>
+            <!-- Search bar -->
+            <div id="search">
+                <select name="cars" id="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+                <input type="search" id="location" name="location">
             </div>
         </div>
-        <!-- Local Listings -->
-        <div class="section">
-            <h1>View local listings</h1>
-            <p>Browse pets in need of a new home.</p>
-            <!-- Scroll -->
-            <div class="scroll-container">
-                <div class="scroll-item">
-                    <img src="ex.png" alt="Cinque Terre">
-                </div>
-                <div class="scroll-item">
-                    <img src="ex.png" alt="Cinque Terre">
-                </div>
-                <div class="scroll-item">
-                    <img src="ex.png" alt="Cinque Terre">
-                </div>
+    </div>
+    <!-- Local Listings -->
+    <div class="section">
+        <h1>View local listings</h1>
+        <p>Browse pets in need of a new home.</p>
+        <!-- Scroll -->
+        <div class="scroll-container">
+            <div class="scroll-item">
+                <img src="ex.png" alt="Cinque Terre">
+            </div>
+            <div class="scroll-item">
+                <img src="ex.png" alt="Cinque Terre">
+            </div>
+            <div class="scroll-item">
+                <img src="ex.png" alt="Cinque Terre">
             </div>
         </div>
-        <!-- Get Involved -->
-        <div class="section">
-            <h1>Get involved</h1>
-            <p>Planning to adopt or rehome? Start here!</p>
-            <!-- List -->
-            <div class="flex-container">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-            </div>
+    </div>
+    <!-- Get Involved -->
+    <div class="section">
+        <h1>Get involved</h1>
+        <p>Planning to adopt or rehome? Start here!</p>
+        <!-- List -->
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
         </div>
-        <!-- Stories -->
-        <div class="section" id="stories">
-            <div id="success">
-                <h1>Stories of success</h1>
-                <p>Since 2020, we have been dedicated to matching animals in need with new loving homes. Read our stories and discover the joy of adopting.</p>
-                <button type="button">Read articles</button>
-            </div>
+    </div>
+    <!-- Stories -->
+    <div class="section" id="stories">
+        <div id="success">
+            <h1>Stories of success</h1>
+            <p>Since 2020, we have been dedicated to matching animals in need with new loving homes. Read our stories and discover the joy of adopting.</p>
+            <button type="button">Read articles</button>
         </div>
-        <!-- Categories -->
-        <div class="section">
-            <!-- List -->
-            <div class="flex-container">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-            </div>
+    </div>
+    <!-- Categories -->
+    <div class="section">
+        <!-- List -->
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
         </div>
-        <!-- Footer -->
-        <div class="footer">
-            <p>Footer goes here</p>
-        </div>
-    </body>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <p>Footer goes here</p>
+    </div>
+</body>
 </html>
