@@ -16,8 +16,140 @@
         font-family: "Lato", sans-serif;
     }
 
+    .section {
+        height: 700px;
+        border-radius: 0px 0px 50px 0px;
+    }
+
+    .section2 {
+        height: 500px;
+        padding: 25px 0px 25px 50px;
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(195,231,249,1) 100%);
+    }
+
+    #landing {
+        background: #ffffff url("puppy.jpg") no-repeat center;
+        background-size: cover;
+        position: relative;
+    }
+
+    #title {
+        margin-left: 50px;
+        position: absolute;
+        top: 40%;
+    }
+
+    select {
+        font-family: "Lato", sans-serif;
+        width: 100px;
+        height: 40px;
+        padding: 10px;
+        border: none;
+        color: #00428D;
+        background-color: #FFCC74;
+    }
+
+    #location {
+        width: 400px;
+        height: 40px;
+        border: none;
+        padding-left: 10px;
+        font-family: "Lato", sans-serif;
+    }
+
+    #searchinto {
+        width: 40px;
+        height: 40px;
+        border: none;
+        background-color: #00428D;
+    }
+
+    #searchinto:hover {
+        background-color: #1D92D4;
+        transition: 0.3s;
+    }
+
+    .scroll-container {
+        height: 350px;
+        overflow: auto;
+        white-space: nowrap;
+        display: flex;
+    }
+
+    .scroll-item {
+        display: inline-block;
+        margin-right: 10px;
+        padding: 25px;
+        border-radius: 25px;
+        background: linear-gradient(180deg, rgba(221,105,44,1) 0%, rgba(255,204,116,1) 100%);
+    }
+
+    .scroll-item img {
+        border-radius: 25px;
+    }
+
+    .scroll-item a {
+        text-decoration: underline;
+        color: #00428D;
+    }
+
+    .flex-container {
+        display: flex;
+        width: 75%;
+    }
+
+    .flex-item {
+        padding: 25px;
+        flex: 1 1 0px;
+    }
+
+    .flex-item ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+    }
+
+    #stories {
+        background: #ffffff url("corgi.jpg") no-repeat center;
+        background-size: cover;
+        position: relative;
+    }
+
+    #success {
+        margin-right: 50px;
+        position: absolute;
+        top: 60%;
+        right: 0;
+        width: 500px;
+        text-align: right;
+    }
+
+    #articles {
+        font-family: "Lato", sans-serif;
+        width: 100px;
+        height: 40px;
+        padding: 10px;
+        border: none;
+        color: #00428D;
+        background-color: #FFCC74;
+    }
+
+    #articles:hover {
+        background-color: #ECAF44;
+        transition: 0.3s;
+    }
+
     h1 {
         font-family: "Arvo", serif;
+        font-size: 40px;
+        line-height: 0.6;
+    }
+
+    h2 {
+        font-family: "Arvo", serif;
+        font-size: 20px;
+        line-height: 0.6;
     }
 
     #nav {
@@ -28,77 +160,116 @@
     }
 
     #nav li {
-        float:left;
+        float: left;
     }
 
     #nav li a {
         display: block;
-        color: blue;
+        color: white;
         text-align: center;
-        padding: 14px 16px;
+        padding: 20px 20px;
         text-decoration: none;
     }
 
     #nav li a:hover:not(.active) {
-        background-color: silver;
+        background-color: rgba(255, 255, 255, 0.3);
+        transition: 0.3s;
     }
 
     .active {
-        background-color: red;
+        background-color: black;
+    }
+
+    .footer {
+        background-color: #00428D;
+        color: white;
+        height: 50px;
+        margin: none;
+        padding: 25px 0px 25px 50px;
     }
 </style>
 </head>
 <body>
-    <!-- Menu -->
-    <ul id="nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="listings.html">Listings</a></li>
-        <li><a href="guides.html">Guides</a></li>
-        <li><a href="stories.html">Stories</a></li>
-    </ul>
     <!-- Landing -->
     <div class="section" id="landing">
+        <!-- Menu -->
+        <ul id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="listings.html">Listings</a></li>
+        </ul>
         <div id="title">
             <h1>Find the right pet for you!</h1>
             <p>Search pets from shelters, rescues, and individuals.</p>
+            <br>
             <!-- Search bar -->
             <div id="search">
-                <select name="cars" id="cars">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
+                <select name="pets" id="pets">
+                    <option value="dogs">Dogs</option>
+                    <option value="cats">Cats</option>
+                    <option value="reptiles">Reptiles</option>
                 </select>
-                <input type="search" id="location" name="location">
+                <input type="search" id="location" name="location" placeholder="State, city, or ZIP">
+                <a href="listings.html"><button type="button" id="searchinto"><img src="search.svg" width="10"></button></a>
             </div>
         </div>
     </div>
     <!-- Local Listings -->
-    <div class="section">
+    <div class="section2">
         <h1>View local listings</h1>
         <p>Browse pets in need of a new home.</p>
+        <br>
         <!-- Scroll -->
         <div class="scroll-container">
             <div class="scroll-item">
-                <img src="ex.png" alt="Cinque Terre">
+                <img src="ex.png" width="200">
+                <a href="listings.html"><h2>Sophie</h2></a>
+                <p>Labrador Retriever<br>Female, 5yrs</p>
             </div>
             <div class="scroll-item">
-                <img src="ex.png" alt="Cinque Terre">
+                <img src="ex.png" width="200">
+                <a href="listings.html"><h2>Sprinkles</h2></a>
+                <p>Domestic Shorthair<br>Female, 12yrs</p>
             </div>
             <div class="scroll-item">
-                <img src="ex.png" alt="Cinque Terre">
+                <img src="ex.png" width="200">
+                <a href="listings.html"><h2>Reeses</h2></a>
+                <p>Domestic Shorthair<br>Male, 5mo</p>
+            </div>
+            <div class="scroll-item">
+                <img src="ex.png" width="200">
+                <a href="listings.html"><h2>Beetle</h2></a>
+                <p>Bearded Dragon<br>Male, 1yr</p>
             </div>
         </div>
     </div>
     <!-- Get Involved -->
-    <div class="section">
+    <div class="section2">
         <h1>Get involved</h1>
         <p>Planning to adopt or rehome? Start here!</p>
+        <br>
         <!-- List -->
         <div class="flex-container">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
+            <div class="flex-item">
+                <img src="house-solid.svg" width="50">
+                <h3>Rehome a pet</h3>
+                <p>List a pet using our adoption tools.</p>
+                <a href="listings.html"><button type="button" id="articles">Get details</button></a>
+            </div>
+            <div class="flex-item">
+                <img src="house-solid.svg" width="50">
+                <h3>Adoption checklist</h3>
+                <p>Make sure you've covered the essentials using our checklist.</p>
+            </div>
+            <div class="flex-item">
+                <img src="house-solid.svg" width="50">
+                <h3>Pet care FAQs</h3>
+                <p>Learn more about your new best friend.</p>
+            </div>
+            <div class="flex-item">
+                <img src="house-solid.svg" width="50">
+                <h3>Covid-19 resources</h3>
+                <p>Discover what you can do to help animals and local groups in need.</p>
+            </div>
         </div>
     </div>
     <!-- Stories -->
@@ -106,21 +277,66 @@
         <div id="success">
             <h1>Stories of success</h1>
             <p>Since 2020, we have been dedicated to matching animals in need with new loving homes. Read our stories and discover the joy of adopting.</p>
-            <button type="button">Read articles</button>
+            <button type="button" id="articles">Read articles</button>
         </div>
     </div>
     <!-- Categories -->
-    <div class="section">
+    <div class="section2">
         <!-- List -->
         <div class="flex-container">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
+            <div class="flex-item">
+                <h3>Dogs by breed</h3>
+                <ul>
+                    <li>Akita</li>
+                    <li>Australian Shepherd</li>
+                    <li>Beagle</li>
+                    <li>Dachshund</li>
+                    <li>French Bulldog</li>
+                    <li>Labrador Retriever</li>
+                </ul>
+                <br>
+                <a href="listings.html"><button type="button" id="articles">Browse all</button></a>
+            </div>
+            <div class="flex-item">
+                <h3>Cats by breed</h3>
+                <ul>
+                    <li>American Shorthair</li>
+                    <li>Bengal</li>
+                    <li>Domestic Shorthair</li>
+                    <li>Maine Coon</li>
+                    <li>Russian Blue</li>
+                    <li>Siamese</li>
+                </ul>
+                <br>
+                <a href="listings.html"><button type="button" id="articles">Browse all</button></a>
+            </div>
+            <div class="flex-item">
+                <h3>Reptiles and amphibians</h3>
+                <ul>
+                    <li>Lizards</li>
+                    <li>Snakes</li>
+                    <li>Frogs</li>
+                    <li>Salamanders</li>
+                </ul>
+                <br>
+                <a href="listings.html"><button type="button" id="articles">Browse all</button></a>
+            </div>
+            <div class="flex-item">
+                <h3>Rodents and other animals</h3>
+                <ul>
+                    <li>Mice and rats</li>
+                    <li>Hamsters</li>
+                    <li>Guinea pigs</li>
+                    <li>Birds</li>
+                </ul>
+                <br>
+                <a href="listings.html"><button type="button" id="articles">Browse all</button></a>
+            </div>
         </div>
     </div>
     <!-- Footer -->
     <div class="footer">
-        <p>Footer goes here</p>
+        <p>&copy; The Pet Project 2025 - HTML Created by Kassidy Lewis</p>
     </div>
 </body>
 </html>
