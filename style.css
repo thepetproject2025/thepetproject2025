@@ -1,0 +1,240 @@
+@font-face {
+    font-family: "Lato";
+    src: url(Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Arvo";
+    src: url(Arvo-Regular.ttf);
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.section {
+    height: 700px;
+    border-radius: 0px 0px 50px 0px;
+}
+
+.section2 {
+    height: 500px;
+    padding: 25px 0px 25px 50px;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(195,231,249,1) 100%);
+}
+
+.section3 {
+    height: 1000px;
+    padding: 25px;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(195,231,249,1) 100%);
+}
+
+#landing {
+    background: #ffffff url("puppy.webp") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+#title {
+    margin-left: 50px;
+    position: absolute;
+    top: 40%;
+}
+
+select {
+    font-family: "Lato", sans-serif;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    color: #00428D;
+    background-color: #FFCC74;
+}
+
+#location {
+    width: 400px;
+    height: 40px;
+    border: none;
+    padding-left: 10px;
+    font-family: "Lato", sans-serif;
+}
+
+#searchinto {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #00428D;
+}
+
+#searchinto:hover {
+    background-color: #1D92D4;
+    transition: 0.3s;
+}
+
+.scroll-container {
+    height: 350px;
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+}
+
+.scroll-item {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 25px;
+    border-radius: 25px;
+    background: linear-gradient(180deg, rgba(221,105,44,1) 0%, rgba(255,204,116,1) 100%);
+}
+
+.scroll-item img, .content img {
+    border-radius: 25px;
+}
+
+.scroll-item a {
+    text-decoration: underline;
+    color: #00428D;
+}
+
+.row {
+    margin: 25px 0px;
+    gap: 10px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.column {
+    width: 15%;
+    display: none;
+}
+
+.content {
+    padding: 25px;
+    border-radius: 25px;
+    background: linear-gradient(180deg, rgba(221,105,44,1) 0%, rgba(255,204,116,1) 100%);
+}
+
+.show {
+    display: block;
+}
+
+.flex-container {
+    display: flex;
+    width: 75%;
+}
+
+.flex-item {
+    padding: 25px;
+    flex: 1 1 0px;
+}
+
+.flex-item ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+#stories {
+    background: #ffffff url("corgi.webp") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+#success {
+    margin-right: 50px;
+    position: absolute;
+    top: 60%;
+    right: 0;
+    width: 500px;
+    text-align: right;
+}
+
+#articles, #filterbox button {
+    font-family: "Lato", sans-serif;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    color: #00428D;
+    background-color: #FFCC74;
+}
+
+#articles:hover, #filterbox button:hover {
+    background-color: #ECAF44;
+    transition: 0.3s;
+}
+
+h1 {
+    font-family: "Arvo", serif;
+    font-size: 40px;
+    line-height: 0.6;
+}
+
+h2 {
+    font-family: "Arvo", serif;
+    font-size: 20px;
+    line-height: 0.6;
+}
+
+.navlist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00428D;
+}
+
+.navlist li {
+    float: left;
+}
+
+.navlist li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+.navlist li a:hover:not(.active) {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
+}
+
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#nav li {
+    float: left;
+}
+
+#nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+#nav li a:hover:not(.active) {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
+}
+
+.active {
+    background-color: black;
+}
+
+.footer {
+    background-color: #00428D;
+    color: white;
+    height: 50px;
+    margin: none;
+    padding: 25px 0px 25px 50px;
+}

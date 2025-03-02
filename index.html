@@ -1,193 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-    @font-face {
-        font-family: "Lato";
-        src: url(Lato-Regular.ttf);
-    }
-
-    @font-face {
-        font-family: "Arvo";
-        src: url(Arvo-Regular.ttf);
-    }
-
-    body {
-        font-family: "Lato", sans-serif;
-    }
-
-    .section {
-        height: 700px;
-        border-radius: 0px 0px 50px 0px;
-    }
-
-    .section2 {
-        height: 500px;
-        padding: 25px 0px 25px 50px;
-        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(195,231,249,1) 100%);
-    }
-
-    #landing {
-        background: #ffffff url("puppy.jpg") no-repeat center;
-        background-size: cover;
-        position: relative;
-    }
-
-    #title {
-        margin-left: 50px;
-        position: absolute;
-        top: 40%;
-    }
-
-    select {
-        font-family: "Lato", sans-serif;
-        width: 100px;
-        height: 40px;
-        padding: 10px;
-        border: none;
-        color: #00428D;
-        background-color: #FFCC74;
-    }
-
-    #location {
-        width: 400px;
-        height: 40px;
-        border: none;
-        padding-left: 10px;
-        font-family: "Lato", sans-serif;
-    }
-
-    #searchinto {
-        width: 40px;
-        height: 40px;
-        border: none;
-        background-color: #00428D;
-    }
-
-    #searchinto:hover {
-        background-color: #1D92D4;
-        transition: 0.3s;
-    }
-
-    .scroll-container {
-        height: 350px;
-        overflow: auto;
-        white-space: nowrap;
-        display: flex;
-    }
-
-    .scroll-item {
-        display: inline-block;
-        margin-right: 10px;
-        padding: 25px;
-        border-radius: 25px;
-        background: linear-gradient(180deg, rgba(221,105,44,1) 0%, rgba(255,204,116,1) 100%);
-    }
-
-    .scroll-item img {
-        border-radius: 25px;
-    }
-
-    .scroll-item a {
-        text-decoration: underline;
-        color: #00428D;
-    }
-
-    .flex-container {
-        display: flex;
-        width: 75%;
-    }
-
-    .flex-item {
-        padding: 25px;
-        flex: 1 1 0px;
-    }
-
-    .flex-item ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        line-height: 1.6;
-    }
-
-    #stories {
-        background: #ffffff url("corgi.jpg") no-repeat center;
-        background-size: cover;
-        position: relative;
-    }
-
-    #success {
-        margin-right: 50px;
-        position: absolute;
-        top: 60%;
-        right: 0;
-        width: 500px;
-        text-align: right;
-    }
-
-    #articles {
-        font-family: "Lato", sans-serif;
-        width: 100px;
-        height: 40px;
-        padding: 10px;
-        border: none;
-        color: #00428D;
-        background-color: #FFCC74;
-    }
-
-    #articles:hover {
-        background-color: #ECAF44;
-        transition: 0.3s;
-    }
-
-    h1 {
-        font-family: "Arvo", serif;
-        font-size: 40px;
-        line-height: 0.6;
-    }
-
-    h2 {
-        font-family: "Arvo", serif;
-        font-size: 20px;
-        line-height: 0.6;
-    }
-
-    #nav {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-
-    #nav li {
-        float: left;
-    }
-
-    #nav li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 20px 20px;
-        text-decoration: none;
-    }
-
-    #nav li a:hover:not(.active) {
-        background-color: rgba(255, 255, 255, 0.3);
-        transition: 0.3s;
-    }
-
-    .active {
-        background-color: black;
-    }
-
-    .footer {
-        background-color: #00428D;
-        color: white;
-        height: 50px;
-        margin: none;
-        padding: 25px 0px 25px 50px;
-    }
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Landing -->
@@ -196,6 +10,7 @@
         <ul id="nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="listings.html">Listings</a></li>
+            <li><a href="credits.html">Credits</a></li>
         </ul>
         <div id="title">
             <h1>Find the right pet for you!</h1>
@@ -207,9 +22,10 @@
                     <option value="dogs">Dogs</option>
                     <option value="cats">Cats</option>
                     <option value="reptiles">Reptiles</option>
+                    <option value="Other">Other</option>
                 </select>
                 <input type="search" id="location" name="location" placeholder="State, city, or ZIP">
-                <a href="listings.html"><button type="button" id="searchinto"><img src="search.svg" width="10"></button></a>
+                <a href="listings.html"><button type="button" id="searchinto"><img src="search.svg" alt="Search" width="10"></button></a>
             </div>
         </div>
     </div>
@@ -221,24 +37,44 @@
         <!-- Scroll -->
         <div class="scroll-container">
             <div class="scroll-item">
-                <img src="ex.png" width="200">
+                <img src="sophie.webp" alt="Sophie" width="200">
                 <a href="listings.html"><h2>Sophie</h2></a>
                 <p>Labrador Retriever<br>Female, 5yrs</p>
             </div>
             <div class="scroll-item">
-                <img src="ex.png" width="200">
+                <img src="sprinkles.webp" alt="Sprinkles" width="200">
                 <a href="listings.html"><h2>Sprinkles</h2></a>
                 <p>Domestic Shorthair<br>Female, 12yrs</p>
             </div>
             <div class="scroll-item">
-                <img src="ex.png" width="200">
+                <img src="reeses.webp" alt="Reeses" width="200">
                 <a href="listings.html"><h2>Reeses</h2></a>
                 <p>Domestic Shorthair<br>Male, 5mo</p>
             </div>
             <div class="scroll-item">
-                <img src="ex.png" width="200">
+                <img src="beetle.webp" alt="Beetle" width="200">
                 <a href="listings.html"><h2>Beetle</h2></a>
                 <p>Bearded Dragon<br>Male, 1yr</p>
+            </div>
+            <div class="scroll-item">
+                <img src="turtle.webp" alt="Luka" width="200">
+                <a href="listings.html"><h2>Luka</h2></a>
+                <p>Red-eared slider<br>Female</p>
+            </div>
+            <div class="scroll-item">
+                <img src="snake.webp" alt="Fang" width="200">
+                <a href="listings.html"><h2>Fang</h2></a>
+                <p>Ball python<br>Female</p>
+            </div>
+            <div class="scroll-item">
+                <img src="bird.webp" alt="Big Bird" width="200">
+                <a href="listings.html"><h2>Big Bird</h2></a>
+                <p>Budgerigar<br>Male</p>
+            </div>
+            <div class="scroll-item">
+                <img src="rodent.webp" alt="Carrots" width="200">
+                <a href="listings.html"><h2>Carrots</h2></a>
+                <p>Guinea pig<br>Male</p>
             </div>
         </div>
     </div>
@@ -250,23 +86,23 @@
         <!-- List -->
         <div class="flex-container">
             <div class="flex-item">
-                <img src="house-solid.svg" width="50">
+                <img src="house-solid.svg" alt="House" width="50">
                 <h3>Rehome a pet</h3>
                 <p>List a pet using our adoption tools.</p>
                 <a href="listings.html"><button type="button" id="articles">Get details</button></a>
             </div>
             <div class="flex-item">
-                <img src="house-solid.svg" width="50">
+                <img src="house-solid.svg" alt="House" width="50">
                 <h3>Adoption checklist</h3>
                 <p>Make sure you've covered the essentials using our checklist.</p>
             </div>
             <div class="flex-item">
-                <img src="house-solid.svg" width="50">
+                <img src="house-solid.svg" alt="House" width="50">
                 <h3>Pet care FAQs</h3>
                 <p>Learn more about your new best friend.</p>
             </div>
             <div class="flex-item">
-                <img src="house-solid.svg" width="50">
+                <img src="house-solid.svg" alt="House" width="50">
                 <h3>Covid-19 resources</h3>
                 <p>Discover what you can do to help animals and local groups in need.</p>
             </div>
@@ -277,7 +113,6 @@
         <div id="success">
             <h1>Stories of success</h1>
             <p>Since 2020, we have been dedicated to matching animals in need with new loving homes. Read our stories and discover the joy of adopting.</p>
-            <button type="button" id="articles">Read articles</button>
         </div>
     </div>
     <!-- Categories -->
@@ -315,6 +150,7 @@
                 <ul>
                     <li>Lizards</li>
                     <li>Snakes</li>
+                    <li>Turtles</li>
                     <li>Frogs</li>
                     <li>Salamanders</li>
                 </ul>
@@ -328,6 +164,7 @@
                     <li>Hamsters</li>
                     <li>Guinea pigs</li>
                     <li>Birds</li>
+                    <li>Hermit crabs</li>
                 </ul>
                 <br>
                 <a href="listings.html"><button type="button" id="articles">Browse all</button></a>
