@@ -12,6 +12,14 @@ body {
     font-family: "Lato", sans-serif;
 }
 
+a {
+    color: #00428D;
+}
+
+a:active {
+    color: rgba(221,105,44,1);
+}
+
 .section {
     height: 700px;
     border-radius: 0px 0px 50px 0px;
